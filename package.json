@@ -1,0 +1,36 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "test": "npm run test",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristobalwee/portfolio.git"
+  },
+  "keywords": [
+    "cristobal",
+    "grana",
+    "portfolio",
+    "ux",
+    "engineer"
+  ],
+  "author": "Cristobal Grana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cristobalwee/portfolio/issues"
+  },
+  "homepage": "https://github.com/cristobalwee/portfolio#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
