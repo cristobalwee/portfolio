@@ -1,0 +1,92 @@
+$body-color: red;
+
+@font-face {
+    font-family: 'Avara';
+    src: url('./assets/Avara-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('./assets/Rubik/Rubik-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Rubik-Italic';
+    src: url('./assets/Rubik/Rubik-LightItalic.ttf');
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  color: $body-color; //#000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+body > div {
+  position: relative;
+  top: 50vh;
+  transform: translateY(-50%);
+}
+
+h1 {
+  font-family: 'Avara', serif;
+  text-align: center;
+  font-size: 4rem;
+  margin: 1rem 2rem;
+  font-weight: bold !important;
+}
+
+p {
+  font-family: 'Rubik-Italic';
+  font-style: italic;
+}
+
+body > span {
+  position: absolute;
+  bottom: 1rem;
+  padding: 0;
+  left: 1rem;
+}
+
+a {
+  font-family: 'Avara', serif;
+  text-align: left;
+  color: #000;
+  display: block;
+  margin: 10px 1rem;
+}
+
+a:hover {
+  color: #000;
+}
+
+img {
+  height: 2rem !important;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  p {
+    padding: 10px 15vw;
+    font-size: 18px !important
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  body > div {
+    top: 45vh;
+  }
+
+  p {
+    padding: 10px 10vw;
+  }
+}

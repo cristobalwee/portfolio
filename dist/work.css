@@ -22,18 +22,6 @@ body {
   text-align: center;
 }
 
-nav {
-  text-align: left;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 2rem 3rem;
-}
-
-nav img {
-  height: 2rem;
-}
-
 h1 {
   font-family: 'Avara', serif;
   font-size: 110px;
@@ -45,7 +33,6 @@ h1 {
 
 h2 {
   font-family: 'Avara', serif;
-  text-align: center;
   font-size: 40px;
   padding: 0 15rem;
   margin: 1rem 2rem;
@@ -65,17 +52,23 @@ body > span {
   left: 1rem;
 }
 
-a {
-  color: #000;
+.top-anchor {
+  position: absolute;
+  text-align: right;
+  top: 0;
+  right: 0;
+  padding: 2rem 3rem;
+  text-decoration: underline;
 }
 
-a:hover {
-  color: #000;
-}
-
-.landing {
-  margin-top: 12rem;
+.bottom-anchor {
   text-align: center;
+}
+
+.bottom-anchor p {
+  display: inline-block;
+  text-decoration: underline;
+  margin: 8px;
 }
 
 .photo-grid {
@@ -97,51 +90,38 @@ a:hover {
   margin: 0.5rem;
 }
 
-.works {
+.work {
   text-align: left;
-  margin: 10rem 5rem 0;
+  padding: 5rem 5rem 0;
 }
 
-.works h1:hover {
-  -webkit-text-stroke: 1px black;
-  color: #fff;
-  cursor: url('assets/arrow.png'), auto;
-}
-
-.about, .contact {
-  text-align: left;
-  margin: 10rem 5rem 0;
-}
-
-.about h2, .contact h2 {
+.work h2 {
   text-align: left;
   padding: 0;
   margin: 1rem 0;
 }
 
-.smiley {
-  cursor: pointer;
-  margin: 10rem auto;
+.nabla {
+  color: #fff;
+  background-color: #000;
+}
+
+.nabla-wrapper {
+  background-color: #000;
+}
+
+.nabla a {
+  color: #fff;
+}
+
+.freely-wrapper {
+  background-color: rgba(255, 207, 207, 0.57);
+}
+
+.freely a {
+  color: #000;
 }
 
 .bottom-anchor {
   margin-bottom: 2rem;
-  text-align: center;
-}
-
-@media only screen and (max-width: 1000px) {
-  p {
-    padding: 10px 15vw;
-    font-size: 18px !important
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  body > div {
-    top: 45vh;
-  }
-
-  p {
-    padding: 10px 10vw;
-  }
 }
